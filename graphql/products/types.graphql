@@ -3,8 +3,8 @@ type Product {
     company_id: String
     name: String
     img: String
-    Type: implantType!
-    Level: implantLevel!
+    Type: implantType
+    Level: implantLevel
     Connection_Type: implantConnectionType
     Connection_Feature: implantConnectionFeature
     Connection_Shape: implantConnectionShape
@@ -17,7 +17,7 @@ type Product {
     Apex_Shape: implantApexShape
     Apex_Hole: implantApexHole
     Apex_Grooves: Boolean
-    company: Company
+    company: Company @belongsTo(relation: "Company")
 }
 
 enum implantType {
