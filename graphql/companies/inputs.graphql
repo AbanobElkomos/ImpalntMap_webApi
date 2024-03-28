@@ -1,0 +1,20 @@
+input createCompany {
+    name: String!
+    img: String
+    desc: String
+    address: String
+    website: String
+    facebook: String
+    twitter: String
+    youtube: String
+}
+input updateCompany {
+    name: String
+    img: String
+    desc: String
+    address: String
+    website: String
+    facebook: String
+    twitter: String
+    youtube: String
+}

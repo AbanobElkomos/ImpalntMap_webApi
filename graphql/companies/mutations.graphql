@@ -1,0 +1,5 @@
+extend type Mutation {
+    createCompany(input: createCompany): Company! @create
+    updateCompany(id: String!, input: updateCompany): Company! @update
+    deleteCompany(id: String!): Company! @delete
+}

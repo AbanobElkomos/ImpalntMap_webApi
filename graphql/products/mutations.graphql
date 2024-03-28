@@ -1,0 +1,5 @@
+extend type Mutation {
+    createProduct(input: createProduct): Product! @create
+    updateProduct(id: String!, input: updateProduct): Product! @update
+    deleteProduct(id: String!): Product! @delete
+}

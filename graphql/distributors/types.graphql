@@ -1,0 +1,13 @@
+type Distributor {
+    id: String
+    name: String
+    img: String
+    desc: String
+    address: String
+    phone: String
+    whatsapp: String
+    website: String
+    facebook: String
+    twitter: String
+    youtube: String
+}

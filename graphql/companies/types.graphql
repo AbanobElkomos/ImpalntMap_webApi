@@ -1,0 +1,11 @@
+type Company {
+    id: String
+    name: String
+    img: String
+    desc: String
+    address: String
+    website: String
+    facebook: String
+    twitter: String
+    youtube: String
+}

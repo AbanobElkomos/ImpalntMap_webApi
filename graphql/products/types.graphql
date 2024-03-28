@@ -1,0 +1,105 @@
+type Product {
+    id: String
+    company_id: String
+    name: String
+    img: String
+    Type: implantType!
+    Level: implantLevel!
+    Connection_Type: implantConnectionType
+    Connection_Feature: implantConnectionFeature
+    Connection_Shape: implantConnectionShape
+    Screwdriver_Shape: impalntScrewdriverShape
+    Screwdriver_Size: Float
+    Head_Shape: implantHeadShape
+    Head_Microthreads: Boolean
+    Body_Shape: implantBodyShape
+    Body_Threads: implantBodyThreads
+    Apex_Shape: implantApexShape
+    Apex_Hole: implantApexHole
+    Apex_Grooves: Boolean
+    company: Company
+}
+
+enum implantType {
+    Standard
+    Zygomatic
+    Basal
+    Short
+    Narrow
+}
+enum implantLevel {
+    Bone
+    Tissue
+}
+enum implantConnectionType {
+    External
+    Internal
+    Custom
+}
+enum implantConnectionFeature {
+    MorseTaper
+    InternalBevel
+    None
+}
+enum implantHeadShape {
+    Wide
+    Flared
+    Straight
+    Angled
+}
+
+enum implantBodyShape {
+    Tapered
+    Straight
+    TaperedApex
+}
+enum implantBodyThreads {
+    NoThreads
+    VShaped
+    Square
+    Buttress
+    ReverseButtress
+    Rounded
+}
+enum implantApexShape {
+    Cone
+    Flat
+    Dome
+    Flared
+}
+enum implantApexHole {
+    NoHole
+    Round
+    Oblong
+}
+enum implantConnectionShape {
+    Hexagon
+    Octagon
+    ThreeSpline
+    FourSpline
+    SixSpline
+    EightSpline
+    NoAntiRotational
+    Triangle
+    Square
+    Pentagon
+    TriLobe
+    FourLobe
+    FiveLobe
+    SixLobe
+    EightLobe
+    OnePieceAbutment
+    OnePieceBall
+    Custom
+}
+enum impalntScrewdriverShape {
+    Hexagon
+    SixPointStar
+    Square
+    Flat
+    FivePointStar
+    EightPointStar
+    FourLobes
+    Cross
+    Other
+}
