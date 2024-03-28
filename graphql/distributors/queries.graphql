@@ -1,4 +1,4 @@
 extend type Query {
     distributor(id: String! @eq): Distributor @find
-    distributors: [Distributor!]! @paginate
+    distributors: [Distributor!]! @paginate(defaultCount: 10)
 }

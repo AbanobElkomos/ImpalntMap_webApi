@@ -1,4 +1,4 @@
 extend type Query {
     Company(id: String! @eq): Company @find
-    Companies: [Company!]! @paginate
+    Companies: [Company!]! @paginate(defaultCount: 10)
 }

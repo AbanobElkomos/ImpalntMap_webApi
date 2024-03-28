@@ -1,6 +1,8 @@
 extend type Mutation {
-    createDistributor(input: createDistributor): Distributor! @create
-    updateDistributor(id: String!, input: updateDistributor): Distributor!
-        @update
-    deleteDistributor(id: String!): Distributor! @delete
+    createDistributor(input: createDistributor @spread): Distributor! @create
+    updateDistributor(
+        id: String!
+        input: updateDistributor @spread
+    ): Distributor! @update
+    deleteDistributor(id: String! @whereKey): Distributor! @delete
 }

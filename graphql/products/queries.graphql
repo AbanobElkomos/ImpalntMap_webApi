@@ -1,4 +1,4 @@
 extend type Query {
     Product(id: String! @eq): Product @find
-    Products: [Product!]! @paginate
+    Products: [Product!]! @paginate(defaultCount: 10)
 }
