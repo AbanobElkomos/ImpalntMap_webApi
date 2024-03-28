@@ -17,7 +17,7 @@ type Product {
     Apex_Shape: implantApexShape
     Apex_Hole: implantApexHole
     Apex_Grooves: Boolean
-    company: Company @belongsTo(relation: "Company")
+    company: Company @belongsTo
 }
 
 enum implantType {
